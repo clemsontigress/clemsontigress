@@ -9,6 +9,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css"/>
+    
     <title>Work Day Scheduler</title>
   </head>
 
@@ -16,7 +17,8 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h3 id="currentDay"></h3>
+      <p id="currentTime" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -28,7 +30,7 @@
             <td class="input-cell">
               <textarea class="input-area" id="area-09"></textarea>
             </td>
-            <td id="save-0900" class="align-middle save-button-cell">
+            <td id="save-09" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -45,7 +47,7 @@
             <td class="input-cell">
               <textarea class="input-area" id="area-10"></textarea>
             </td>
-            <td id="save-1000" class="align-middle save-button-cell">
+            <td id="save-10" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -61,7 +63,7 @@
             <td class="input-cell">
               <textarea class="input-area" id="area-11"></textarea>
             </td>
-            <td id="save-1100" class="align-middle save-button-cell">
+            <td id="save-11" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -77,7 +79,7 @@
             <td class="input-cell">
               <textarea class="input-area" id="area-12"></textarea>
             </td>
-            <td id="save-1200" class="align-middle save-button-cell">
+            <td id="save-12" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -88,12 +90,12 @@
               </div>
             </td>
           </tr>
-          <tr id="13">
-            <th scope="row" class="align-middle time">13:00</th>
+          <tr id="1">
+            <th scope="row" class="align-middle time">1:00</th>
             <td class="input-cell">
-              <textarea class="input-area" id="area-13"></textarea>
+              <textarea class="input-area" id="area-1"></textarea>
             </td>
-            <td id="save-1300" class="align-middle save-button-cell">
+            <td id="save-1" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -104,12 +106,12 @@
               </div>
             </td>
           </tr>
-          <tr id="14">
-            <th scope="row" class="align-middle time">14:00</th>
+          <tr id="2">
+            <th scope="row" class="align-middle time">2:00</th>
             <td class="input-cell">
-              <textarea class="input-area" id="area-14"></textarea>
+              <textarea class="input-area" id="area-2"></textarea>
             </td>
-            <td id="save-1400" class="align-middle save-button-cell">
+            <td id="save-2" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -120,12 +122,12 @@
               </div>
             </td>
           </tr>
-          <tr id="15">
-            <th scope="row" class="align-middle time">15:00</th>
+          <tr id="3">
+            <th scope="row" class="align-middle time">3:00</th>
             <td class="input-cell">
-              <textarea class="input-area" id="area-15"></textarea>
+              <textarea class="input-area" id="area-3"></textarea>
             </td>
-            <td id="save-1500" class="align-middle save-button-cell">
+            <td id="save-3" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -136,12 +138,12 @@
               </div>
             </td>
           </tr>
-          <tr id="16">
-            <th scope="row" class="align-middle time">16:00</th>
+          <tr id="4">
+            <th scope="row" class="align-middle time">4:00</th>
             <td class="input-cell">
-              <textarea class="input-area" id="area-16"></textarea>
+              <textarea class="input-area" id="area-4"></textarea>
             </td>
-            <td id="save-1600" class="align-middle save-button-cell">
+            <td id="save-4" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -152,12 +154,12 @@
               </div>
             </td>
           </tr>
-          <tr id="17" class="border">
-            <th scope="row" class="align-middle time">17:00</th>
+          <tr id="5" class="border">
+            <th scope="row" class="align-middle time">5:00</th>
             <td class="input-cell">
-              <textarea class="input-area" id="area-17"></textarea>
+              <textarea class="input-area" id="area-5"></textarea>
             </td>
-            <td id="save-1700" class="align-middle save-button-cell">
+            <td id="save-5" class="align-middle save-button-cell">
               <div class="text-center">
                 <button
                   class="btn btn-outline-secondary save-button"
@@ -173,9 +175,9 @@
        </table>
 
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
-    <script src="testscript.js"></script>
+    <script src="script.js"></script>
  
   </body>
 </html>
