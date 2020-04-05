@@ -6,10 +6,10 @@ $(document).ready(function() {
     function init() {
       dynamicTime()
     }
+    var currentTime = moment().format('LLL');
+
 
 function dynamicTime() {
-    
-    var currentTime = moment().format('LLL');
     $("#currentTime").text(currentTime);
     setInterval(dynamicTime, 1000);
     
@@ -44,5 +44,20 @@ for (var i = 0; i < timeIDs.length; i++) {
       }
     }
 
+    //Save input into local storage
+    
+    function saveTask() {
+    var textInput = $(this)
+    .closest('tr')
+    .find('textarea')
+    .val();
+   
+    localStorage.setItem('task', textInput);
+        return(textInput)
+    }
+
+   $('.save-button').on('click', saveTask)
+    
+   
 
 })
