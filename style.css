@@ -27,7 +27,7 @@ body {
   }
   
   th {
-    background-color: rgb(87, 170, 238);
+    background-color: rgb(129, 202, 250);
   }
   
   th,
@@ -54,7 +54,7 @@ body {
   }
   
   .save-button-cell {
-    background-color: rgb(71, 221, 129);
+    background-color: springgreen;
   }
   
   .time,
@@ -64,12 +64,6 @@ body {
   
   #title-date, #title-time {
       margin: 0;
-  }
-  
-  .sticky-footer {
-    bottom: 0px;
-    position: absolute;
-    width: 100%;
   }
   
   .description{
